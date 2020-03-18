@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{01677880-82E1-4EA6-A5C5-9591709EF353}|Default">
+  <MonoDevelop.Ide.ItemProperties.ArrayShift PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ArrayShift/Program.cs">
+    <Files>
+      <File FileName="ArrayShift/Program.cs" Line="53" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ArrayShift" expanded="True">
+            <Node name="ArrayShift" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

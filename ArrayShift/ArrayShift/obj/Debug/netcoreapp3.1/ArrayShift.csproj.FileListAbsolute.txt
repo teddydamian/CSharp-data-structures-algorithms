@@ -1,0 +1,10 @@
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/bin/Debug/netcoreapp3.1/ArrayShift.deps.json
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/bin/Debug/netcoreapp3.1/ArrayShift.runtimeconfig.json
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/bin/Debug/netcoreapp3.1/ArrayShift.runtimeconfig.dev.json
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/bin/Debug/netcoreapp3.1/ArrayShift.dll
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/bin/Debug/netcoreapp3.1/ArrayShift.pdb
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/obj/Debug/netcoreapp3.1/ArrayShift.csprojAssemblyReference.cache
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/obj/Debug/netcoreapp3.1/ArrayShift.AssemblyInfoInputs.cache
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/obj/Debug/netcoreapp3.1/ArrayShift.AssemblyInfo.cs
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/obj/Debug/netcoreapp3.1/ArrayShift.dll
+/Users/teddydamian/Desktop/codefellows/code401ASP.NET/CSharp-data-structures-algorithms/ArrayShift/ArrayShift/obj/Debug/netcoreapp3.1/ArrayShift.pdb

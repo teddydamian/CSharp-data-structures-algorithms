@@ -10,7 +10,7 @@ Given an array of integers and a new number. Output a new array with the new num
 | [2,99,100] 12  | [2,12,99,100] |
 
 ## Whiteboard Visual
-![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/ArrayShift/ArrayShift/ArrShft.png)
+![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/ArrayShift.png)
 
 ## Change Log
 Vers 1.0 - Created the program with the features.

@@ -2,77 +2,89 @@
 
 namespace BinarySearch
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Binary Search");
 
-            Console.WriteLine("Insert length of array");
+            int[] array = { 2, 4, 8, 15, 16, 23, 42 , 84 };
+       
+            int checker = 4;
+            int checker1 = 8;
+            int checker2 = 15;
+            int checker3 = 16;
+            int checker4 = 23;
+            int checker5 = 42;
+         
+            int result = BinarySearch(array, checker);
+            int result1 = BinarySearch(array, checker1);
+            int result2 = BinarySearch(array, checker2);
+            int result3 = BinarySearch(array, checker3);
+            int result4 = BinarySearch(array, checker4);
+            int result5 = BinarySearch(array, checker5);
 
-            string arrSize = Console.ReadLine();
-            int arraySize = Convert.ToInt32(arrSize);
+            Console.WriteLine($"{checker} is at index {result}");
+            Console.WriteLine($"{checker1} is at index {result1}");
+            Console.WriteLine($"{checker2} is at index {result2}");
+            Console.WriteLine($"{checker3} is at index {result3}");
+            Console.WriteLine($"{checker4} is at index {result4}");
+            Console.WriteLine($"{checker5} is at index {result5}");
 
-            int[] array = new int[arraySize];
-
-            int[] arr = Populate(array);
-
-            Console.WriteLine("Insert a number to check");
-            string check = Console.ReadLine();
-            int checker = Convert.ToInt32(check);
-
-            BinarySearch(array, checker);
-        }
-
-        static int[] Populate(int[] pop)
-        {
-
-            for (int i = 0; i < pop.Length; i++)
-            {
-                Console.WriteLine($"Enter a number, {i + 1} of {pop.Length}");
-
-                string userInput = Console.ReadLine();
-                int userInt = Convert.ToInt32(userInput);
-                pop[i] = userInt;
-            }
-            return pop;
         }
 
         public static int BinarySearch(int[] inputArray, int checker)
         {
             int arraySize = inputArray.Length;
+           
+
+            bool flag = false;
             int midIndex = arraySize / 2;
 
-
-            if (inputArray[midIndex] == checker)
+            while (midIndex <= arraySize )
             {
+                if (inputArray[midIndex] == checker)
+                {
+                    flag = true;
+                    break;
+                }
+
+                if (midIndex == 0)
+                {
+                    break;
+                }
+
+                if (midIndex == arraySize - 1)
+                {
+                    break;
+                }
+
+                if (inputArray[midIndex] > checker)
+                {
+                    midIndex -= 1;
+                }
+
+                if (inputArray[midIndex] < checker && midIndex != 1 )
+                {
+                    midIndex += 1;
+
+                }
+                if (inputArray[midIndex] > checker && midIndex == 1)
+                {
+                    midIndex -= 1;
+                }
+            }
+
+            if (flag == true)
+            {
+                
                 return midIndex;
             }
-
-            if (inputArray[midIndex] == 0)
+            else
             {
-                int value = midIndex - 1;
-                return value;
+                return -1;
             }
-
-            if (inputArray[midIndex] > checker)
-            {
-                midIndex -= (midIndex / 2);
-                return midIndex;
-            }
-
-            if (inputArray[midIndex] < checker && midIndex != 1)
-            {
-                midIndex += (midIndex / 2);
-            }
-
-            if (inputArray[midIndex] > checker && midIndex == 1)
-            {
-                int value = midIndex - 1;
-                return value;
-            }
-
-
+       
         }
     }
 }

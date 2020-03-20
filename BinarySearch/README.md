@@ -9,8 +9,11 @@ Given an array of integers and a new number. Output index location of the number
 | [2,3,4,5] 3 |  | 1
 | [2,99,120,200] 12  | -1 |
 
+## Console Visual
+![Console.Visual](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/Binary%20Search.png)
+
 ## Whiteboard Visual
-![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/ArrayShift/ArrayShift/ArrShft.png)
+![Whiteboard](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/BinarySearch.jpg)
 
 ## Change Log
 Vers 1.0 - Created the program with the features.

@@ -32,7 +32,12 @@ namespace BinarySearch
             Console.WriteLine($"{checker5} is at index {result5}");
 
         }
-
+        /// <summary>
+        /// This method will do the search, move to left if its less than mid index, move to right when its more than mid index, and check until mid Index is same with checker.
+        /// </summary>
+        /// <param name="inputArray">Given Array.</param>
+        /// <param name="checker">Number that is given to check.</param>
+        /// <returns>Either return index number or -1 if not found.</returns>
         public static int BinarySearch(int[] inputArray, int checker)
         {
             int arraySize = inputArray.Length;

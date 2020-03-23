@@ -1,4 +1,4 @@
-# LinkedList
+# Singly LinkedList
 ### Author: Teddy Damian
 
 ## Problem Domain
@@ -9,6 +9,14 @@ How to Create LinkedList using C# - TTD.
 - Inserting Nodes
 - Setting Value to head
 - Checking the next value on node
+- Overriding the built-in method ToString()
+
+##### BigO = O(1)
+
+## API
+Insert() : add new node and assign value to Head
+Include() : Return true or False if there is value in node
+ToString() : Outputing the Linkedlist as a string 
 
 ## Change Log
 Vers 1.0 - Created the program with the features.

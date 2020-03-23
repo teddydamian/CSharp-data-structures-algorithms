@@ -14,9 +14,11 @@ How to Create LinkedList using C# - TTD.
 ##### BigO = O(1)
 
 ## API
-Insert() : add new node and assign value to Head
-Include() : Return true or False if there is value in node
-ToString() : Outputing the Linkedlist as a string 
+| Input | Expected Output |
+| :----------- | :----------- |
+| Insert() | add new node and assign value to Head.|
+| Include() | Return true or False if there is value in node.|
+| ToString() | Outputing the Linkedlist as a string.|
 
 ## Change Log
 Vers 1.0 - Created the program with the features.

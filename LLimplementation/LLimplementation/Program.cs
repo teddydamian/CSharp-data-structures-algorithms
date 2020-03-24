@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LLimplementation
+namespace LLImplementation
 {
     class Program
     {

@@ -1,14 +1,11 @@
 using System;
 using Xunit;
-using LLimplementation.Classes;
+using LLImplementation.Classes;
 
 namespace LLTestUnit
 {
     public class UnitTest1
     {
-        /// <summary>
-        /// Instantiate Node and see if it has value.
-        /// </summary>
         [Fact]
         public void NodeClassHasValueProperty()
         {
@@ -30,7 +27,6 @@ namespace LLTestUnit
 
             Assert.Equal(10, node.Value);
         }
-
     }
-}
 
+}

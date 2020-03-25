@@ -29,6 +29,7 @@ InsertBefore(newValue, value)
 newValue = the new value going to be added.
 value = the value of the next node value.
 
+[Link to Code](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/LinkedList/LinkedList/Classes/LinkedList.cs)
 ![WB](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/kth.png)
 
 ## Change Log

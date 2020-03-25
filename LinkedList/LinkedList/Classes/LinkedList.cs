@@ -107,8 +107,8 @@ namespace LinkedList.Classes
         /// <summary>
         /// Method should Check value of the nth from the end of LL. If it is bigger than LL length, it will throw exception.
         /// </summary>
-        /// <param name="k"></param>
-        /// <returns></returns>
+        /// <param name="k">The index number of the node from the end</param>
+        /// <returns>The Value of the Node</returns>
         public int KthFromEnd(int k)
         {
             Current = Head;

@@ -223,6 +223,9 @@ namespace XUnitTestProject1
             Assert.True(exist);
         }
 
+        /// <summary>
+        /// This should check the value of a node when an index is given.
+        /// </summary>
         [Fact]
         public void CanCheckKthNodeValueFromEnd()
         {
@@ -233,10 +236,11 @@ namespace XUnitTestProject1
             ll.Insert(20);
             ll.Insert(30);
             ll.Insert(42);
+            ll.Insert(51);
 
             //Act
-            int result = ll.KthFromEnd(2);
-            Assert.Equal(30, result);
+            int result = ll.KthFromEnd(1);
+            Assert.Equal(51, result);
         }
     }
 }

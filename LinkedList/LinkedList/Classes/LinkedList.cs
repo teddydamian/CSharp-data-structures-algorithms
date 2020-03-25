@@ -8,12 +8,12 @@ namespace LinkedList.Classes
     {
         public Node Head { get; set; }
         private Node Current { get; set; }
+        public int Length { get; set; }
 
-
-    /// <summary>
-    /// This method is used to insert a node
-    /// </summary>
-    /// <param name="value">The value of the node.</param>
+        /// <summary>
+        /// This method is used to insert a node
+        /// </summary>
+        /// <param name="value">The value of the node.</param>
         public void Insert(int value)
         {
             // instantiate a new Node 
@@ -25,6 +25,7 @@ namespace LinkedList.Classes
 
             //set that(new node) as the head
             Head = node;
+            Length += 1;
         }
 
         /// <summary>
@@ -72,6 +73,28 @@ namespace LinkedList.Classes
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Mthod should add a new node and value before a specific node
+        /// </summary>
+        /// <param name="value">Target Node</param>
+        /// <param name="newValue">New Node Value</param>
+        public int InsertBefore(int value, int newValue)
+        {
+            Current = Head;
+            Node current = new Node();
+            current.Value = value;
 
+            while (Current.Next.Value != value && Current.Next.Next != null)
+            {
+                Current = Current.Next;
+            }
+            if (Current.Next.Value == value)
+            {
+                Node nextList = Current.Next;
+                Current.Next = current;
+                Current.Next.Next = nextList;
+            }
+            return Length + 1;
+        }
     }
 }

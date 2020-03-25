@@ -202,5 +202,25 @@ namespace XUnitTestProject1
             Assert.Equal(expected, allyson);
 
         }
+
+        /// <summary>
+        /// I added the property of Length in LL to check the length of the LL
+        /// </summary>
+        [Fact]
+        public void CanInserNodeBeforeThirdNode()
+        {
+            //Arrange
+            Linklist ll = new Linklist();
+
+            ll.Insert(10);
+            ll.Insert(20);
+            ll.Insert(30);
+            ll.Insert(42);
+
+            //Act
+            int expected = ll.Length + 1;
+            int newSize = ll.InsertBefore(30, 35);
+            Assert.Equal(expected, newSize);
+        }
     }
 }

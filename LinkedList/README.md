@@ -14,7 +14,8 @@
 | Insert() | add new node and assign value to Head.|
 | Include() | Return true or False if there is value in node.|
 | ToString() | Outputing the Linkedlist as a string.|
-![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/New2.png)
+
+![WB](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/New2.png)
 
 ## Problem Domain 2:
 #### Create a method called InsertBefore that takes in 2 arguments (newValue and value) to add a new node in a linkedList before a specific node.
@@ -27,6 +28,7 @@
 InsertBefore(newValue, value)
 newValue = the new value going to be added.
 value = the value of the next node value.
+
 ![WB](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/kth.png)
 
 ## Change Log

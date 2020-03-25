@@ -204,7 +204,7 @@ namespace XUnitTestProject1
         }
 
         /// <summary>
-        /// I added the property of Length in LL to check the length of the LL
+        /// I added the property of Length in LL to check the Len
         /// </summary>
         [Fact]
         public void CanInserNodeBeforeThirdNode()
@@ -218,9 +218,25 @@ namespace XUnitTestProject1
             ll.Insert(42);
 
             //Act
-            int expected = ll.Length + 1;
-            int newSize = ll.InsertBefore(30, 35);
-            Assert.Equal(expected, newSize);
+            ll.InsertBefore(30, 35);
+            bool exist = ll.Includes(35);
+            Assert.True(exist);
+        }
+
+        [Fact]
+        public void CanCheckKthNodeValueFromEnd()
+        {
+            //Arrange
+            Linklist ll = new Linklist();
+
+            ll.Insert(10);
+            ll.Insert(20);
+            ll.Insert(30);
+            ll.Insert(42);
+
+            //Act
+            int result = ll.KthFromEnd(2);
+            Assert.Equal(30, result);
         }
     }
 }

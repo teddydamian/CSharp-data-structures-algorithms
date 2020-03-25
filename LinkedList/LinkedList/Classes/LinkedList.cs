@@ -74,11 +74,11 @@ namespace LinkedList.Classes
         }
 
         /// <summary>
-        /// Mthod should add a new node and value before a specific node
+        /// Method should add a new node and value before a specific node
         /// </summary>
         /// <param name="value">Target Node</param>
         /// <param name="newValue">New Node Value</param>
-        public int InsertBefore(int value, int newValue)
+        public void InsertBefore(int value, int newValue)
         {
             Current = Head;
             Node current = new Node();
@@ -88,13 +88,42 @@ namespace LinkedList.Classes
             {
                 Current = Current.Next;
             }
+
             if (Current.Next.Value == value)
             {
                 Node nextList = Current.Next;
                 Current.Next = current;
+                current.Value = newValue;
                 Current.Next.Next = nextList;
+                Length++;
             }
-            return Length + 1;
+            else
+            {
+                Console.WriteLine("cant find the note");
+
+            }
+        }
+
+        /// <summary>
+        /// Method should Check value of the nth from the end of LL. If it is bigger than LL length, it will throw exception.
+        /// </summary>
+        /// <param name="k"></param>
+        /// <returns></returns>
+        public int KthFromEnd(int k)
+        {
+            Current = Head;
+            try
+            {
+                for (int i = 0; i < k-1 ; i++)
+                {
+                    Current = Current.Next;
+                }
+                return Current.Value;
+            }
+            catch 
+            {
+                throw new Exception();
+            }
         }
     }
 }

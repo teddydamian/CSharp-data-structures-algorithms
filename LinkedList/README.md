@@ -1,6 +1,6 @@
 # Singly LinkedList
 ### Author: Teddy Damian
-## Problem Domain
+## Problem Domain 1:
 #### How to Create LinkedList using C# - TTD.
 - Creating Nodes
 - Setting Value
@@ -16,6 +16,7 @@
 | ToString() | Outputing the Linkedlist as a string.|
 ![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/New2.png)
 
+## Problem Domain 2:
 #### Create a method called InsertBefore that takes in 2 arguments (newValue and value) to add a new node in a linkedList before a specific node.
 #### O(1) 
 ### API

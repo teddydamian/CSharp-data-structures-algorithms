@@ -22,3 +22,5 @@ How to Create LinkedList using C# - TTD.
 
 ## Change Log
 Vers 1.0 - Created the program with the features.
+Vers 2.0 - Created a method called InsertBefore.
+Vers 3.0 - Created a method called KthFromEnd.

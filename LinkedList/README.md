@@ -12,7 +12,7 @@ How to Create LinkedList using C# - TTD.
 - Overriding the built-in method ToString()
 
 ##### BigO = O(1)
-
+![WB](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/kth.png)
 ## API
 | Input | Expected Output |
 | :----------- | :----------- |
@@ -21,6 +21,6 @@ How to Create LinkedList using C# - TTD.
 | ToString() | Outputing the Linkedlist as a string.|
 
 ## Change Log
-Vers 1.0 - Created the program with the features.
-Vers 2.0 - Created a method called InsertBefore.
-Vers 3.0 - Created a method called KthFromEnd.
+- Vers 1.0 - Created the program with the features.
+- Vers 2.0 - Created a method called InsertBefore.
+- Vers 3.0 - Created a method called KthFromEnd.

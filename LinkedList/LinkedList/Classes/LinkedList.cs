@@ -105,6 +105,28 @@ namespace LinkedList.Classes
         }
 
         /// <summary>
+        /// Appending new node to the end of the list.
+        /// </summary>
+        /// <param name="value">value is an integer and is the value of the node being added</param>
+        public void Append(int value)
+        {
+            while (Current != null)
+            {
+                if (Current.Next != null)
+                {
+                    Current = Current.Next;
+                }
+                else
+                {
+                    Node node = new Node();
+                    Current.Next = node;
+                    node.Value = value;
+                }
+                Current = Current.Next;
+            }
+        }
+
+        /// <summary>
         /// Method should Check value of the nth from the end of LL. If it is bigger than LL length, it will throw exception.
         /// </summary>
         /// <param name="k">The index number of the node from the end</param>

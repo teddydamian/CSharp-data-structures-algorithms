@@ -32,6 +32,19 @@ value = the value of the next node value.
 [Link to Code](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/LinkedList/LinkedList/Classes/LinkedList.cs)
 ![WB](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/kth.png)
 
+## Problem Domain 3:
+#### Create a method called MergeLists that takes in 2 arguments (list1, list2) that merge both arrays by interlacing them.
+#### O(1) 
+### API
+| Input | Expected Output |
+| :----------- | :----------- |
+| [1,3]  [2,4] | [1,2,3,4] | 
+
+MergeList(list1, list2)
+
+![WB](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/kth.png)
+
+
 ## Change Log
 - Vers 1.0 - Created the program with the features.
 - Vers 2.0 - Created a method called InsertBefore.

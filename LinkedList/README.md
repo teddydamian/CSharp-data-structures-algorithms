@@ -42,7 +42,7 @@ value = the value of the next node value.
 
 MergeList(list1, list2)
 
-![WB](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/kth.png)
+![WB](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/MergeList.png)
 
 
 ## Change Log

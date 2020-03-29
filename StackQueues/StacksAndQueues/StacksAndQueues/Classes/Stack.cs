@@ -76,7 +76,7 @@ namespace StacksAndQueues.Classes
         /// Method to see if stack is empty
         /// </summary>
         /// <returns></returns>
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             return Top == null;
         }

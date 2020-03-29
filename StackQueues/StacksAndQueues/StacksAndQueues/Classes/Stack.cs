@@ -7,6 +7,8 @@ namespace StacksAndQueues.Classes
     {
         private Node Top { get; set; }
 
+        public int Size { get; set; } = 0;
+
         public Stack()
         {
             Top = null;
@@ -44,6 +46,7 @@ namespace StacksAndQueues.Classes
             Node newTop = new Node(value);
             Top = newTop;
             newTop.Next = prevousTop;
+            Size++;
 
         }
     }

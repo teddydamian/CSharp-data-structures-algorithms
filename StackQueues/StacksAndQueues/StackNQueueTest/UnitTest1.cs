@@ -12,7 +12,17 @@ namespace StackNQueueTest
             Stack stack = new Stack();
             string expected = stack.ToString();
             string input = "Top of Stack -> NULL";
-            Assert.Equal(input, expected);
+            Assert.Equal(expected, input);
         }
+
+        [Fact]
+        public void AddNodeIntoStackWithPush()
+        {
+            Stack stack = new Stack();
+            stack.Push(10);
+            Assert.Equal(1, stack.Size);
+
+        }
+
     }
 }

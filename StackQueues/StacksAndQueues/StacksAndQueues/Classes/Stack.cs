@@ -66,15 +66,25 @@ namespace StacksAndQueues.Classes
                 Size--;
                 return oldTop.Value;
             }
-            catch(NullReferenceException e)
+            catch
             {
-                throw e;
+                throw new NullReferenceException();
             }
         }
 
-        //Define a method called peek that does not take an argument and returns the value of the node located on top of the stack,
-        //without removing it from the stack.
-//Should raise exception when called on empty stack
+        /// <summary>
+        /// Method to see if stack is empty
+        /// </summary>
+        /// <returns></returns>
+        public bool isEmpty()
+        {
+            return Top == null;
+        }
+
+        /// <summary>
+        /// Method to check the top node value
+        /// </summary>
+        /// <returns>Top node value</returns>
         public int Peek()
         {
             try

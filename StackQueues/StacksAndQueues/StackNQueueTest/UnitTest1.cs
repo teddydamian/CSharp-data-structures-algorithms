@@ -46,17 +46,28 @@ namespace StackNQueueTest
             Assert.Equal(expected, input);
         }
 
-        //
-        //[Fact]
-        //public void PopWithEmptyStack()
-        //{
-        //    Stack stack = new Stack();
-        //    var expected = stack.Pop();
+        [Fact]
+        public void CheckIfStackIsEmpty()
+        {
+            Stack stack = new Stack();
+            bool input = stack.isEmpty();
+            Assert.True(input);
+        }
 
-        //    NullReferenceException ex = Assert.Throws<NullReferenceException>(() => expected);
-
-        //    Assert.Equal("System.NullReferenceException : Object reference not set to an instance of an object.", ex.Message);
-        //}
+        [Fact]
+        public void PopWithEmptyStack()
+        {
+            Stack stack = new Stack();
+            Exception ex = Record.Exception(() => stack.Pop());
+            Assert.IsType<NullReferenceException>(ex);
+        }
+        [Fact]
+        public void PeekWithEmptyStack()
+        {
+            Stack stack = new Stack();
+            Exception ex = Record.Exception(() => stack.Peek());
+            Assert.IsType<Exception>(ex);
+        }
 
     }
 }

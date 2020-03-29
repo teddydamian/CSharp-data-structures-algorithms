@@ -74,5 +74,14 @@ namespace StacksAndQueues.Classes
                 throw new Exception();
             }
         }
+
+        /// <summary>
+        /// Method to see if queue is empty
+        /// </summary>
+        /// <returns></returns>
+        public bool IsEmpty()
+        {
+            return Front == null;
+        }
     }
 }

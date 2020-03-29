@@ -97,7 +97,7 @@ namespace StackNQueueTest
         public void CheckIfStackIsEmpty()
         {
             Stack stack = new Stack();
-            bool input = stack.isEmpty();
+            bool input = stack.IsEmpty();
             Assert.True(input);
         }
 
@@ -239,6 +239,16 @@ namespace StackNQueueTest
             Queue queue = new Queue();
             int input = queue.Size;
             Assert.Equal(0, input);
+        }
+
+        /// <summary>
+        /// Check if the queue is empty
+        /// </summary>
+        [Fact]
+        public void CheckForEmptyQueue()
+        {
+            Queue queue = new Queue();
+            Assert.True(queue.IsEmpty());
         }
     }
 }

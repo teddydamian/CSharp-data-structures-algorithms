@@ -21,7 +21,7 @@ Creating all the methods for Stack and Queue
 All methods will be O(1)
 
 ## Visual
-
+![WB for Push() on stack](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/StackNQueue.png)
 
 ## API
 Stack: Push, Pop, Peek, IsEmpty

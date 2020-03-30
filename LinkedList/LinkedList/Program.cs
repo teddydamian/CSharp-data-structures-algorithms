@@ -40,6 +40,36 @@ namespace LinkedList
 
             return LL2;
         }
+
+        public Linklist MergeList(LinkedList listOne, LinkedList listTwo)
+		{
+            Node currentOne = listOne.Head;
+            Node currentTwo = listTwo.Head;
+            Node helpOne;
+            Node helpTwo;
+
+            //Handles Even Lists
+            while (currentOne.Next != null && currentTwo.Next != null)
+            {
+                helpOne = currentOne.Next;
+                currentOne.Next = currentTwo;
+                currentOne = helpOne;
+
+                helpTwo = currentTwo.Next;
+                currentTwo.Next = currentOne;
+                currentTwo = helpTwo;
+            }
+
+            //Handles Uneven Lists
+            if (currentTwo.Next == null)
+            {
+                helpOne = currentOne.Next;
+                currentOne.Next = currentTwo;
+                currentTwo.Next = helpOne;
+            }
+
+            return listOne;
+        }
         
     }
 }

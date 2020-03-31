@@ -5,15 +5,27 @@ namespace QueueWithStacks.Classes
 {
     public class PseudoQueue
     {
-        //Instantiate 2 stacks
-        Stack one = new Stack();
-        Stack two = new Stack();
-        public Node Current { get; set; }
+        public Stack One = new Stack();
+        public Stack Two = new Stack();
+        public int Size { get; set; } = 0;
 
-        public Stack Enqueue(int value)
+
+        public string Enqueue(int value)
         {
-            one.Push(value);
-            return one;
+            
+            while(One.Size > 0)
+            {
+                Two.Push(One.Pop());
+            }
+            One.Push(value);
+            while(Two.Size > 0)
+            {
+                One.Push(Two.Pop());
+            }
+            Size++;
+
+            string x = One.ToString();
+            return x;
         }
     }
 }

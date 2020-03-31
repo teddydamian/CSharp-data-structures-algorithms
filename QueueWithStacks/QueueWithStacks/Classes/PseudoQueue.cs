@@ -16,20 +16,32 @@ namespace QueueWithStacks.Classes
         /// <returns>string of the new first stack</returns>
         public string Enqueue(int value)
         {
-            
-            while(One.Size > 0)
-            {
-                Two.Push(One.Pop());
-            }
-            One.Push(value);
-            while(Two.Size > 0)
-            {
-                One.Push(Two.Pop());
-            }
-            Size++;
 
-            string x = One.ToString();
-            return x;
+            if(One.Size == 0)
+            {
+                One.Push(value);
+                Size++;
+                string x = One.ToString();
+                return x;
+            }
+            else
+            {
+                while(One.Size != 0)
+                {
+                    Two.Push(One.Pop());
+                }
+                One.Push(value);
+                while(Two.Size != 0)
+                {
+                    One.Push(Two.Pop());
+                }
+                Size++;
+
+                string x = One.ToString();
+                return x;
+
+            }
+
         }
 
         /// <summary>
@@ -38,11 +50,9 @@ namespace QueueWithStacks.Classes
         /// <returns>string of the stack after top is removed</returns>
         public string Dequeue()
         {
-            
             if(One.Size == 0)
             {
-                return "Stack is empty";
-                
+                throw new Exception();
             }
             else
             {

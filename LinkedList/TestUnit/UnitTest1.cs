@@ -243,6 +243,9 @@ namespace XUnitTestProject1
             Assert.Equal(51, result);
         }
 
+        /// <summary>
+        /// Test to check if both list is succesfully merged
+        /// </summary>
         [Fact]
         public void CheckToMergeLinkList()
         {

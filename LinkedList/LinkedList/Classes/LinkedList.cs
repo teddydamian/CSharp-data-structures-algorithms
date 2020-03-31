@@ -147,5 +147,41 @@ namespace LinkedList.Classes
                 throw new Exception();
             }
         }
+
+        /// <summary>
+        /// Method to Merge 2 lists and return 1 long list
+        /// </summary>
+        /// <param name="listOne">Linklist 1</param>
+        /// <param name="listTwo">Linklist 2</param>
+        /// <returns>MergedList</returns>
+        public Linklist MergeList(Linklist listOne, Linklist listTwo)
+        {
+            Node currentOne = listOne.Head;
+            Node currentTwo = listTwo.Head;
+            Node helpOne;
+            Node helpTwo;
+            listOne.Length += listTwo.Length;
+            // Handles Even Lists
+            while (currentOne.Next != null && currentTwo.Next != null)
+            {
+                helpOne = currentOne.Next;
+                currentOne.Next = currentTwo;
+                currentOne = helpOne;
+
+                helpTwo = currentTwo.Next;
+                currentTwo.Next = currentOne;
+                currentTwo = helpTwo;
+            }
+
+            // Handles Uneven Lists
+            if (currentTwo.Next == null)
+            {
+                helpOne = currentOne.Next;
+                currentOne.Next = currentTwo;
+                currentTwo.Next = helpOne;
+            }
+
+            return listOne;
+        }
     }
 }

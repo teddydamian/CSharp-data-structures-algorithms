@@ -242,5 +242,31 @@ namespace XUnitTestProject1
             int result = ll.KthFromEnd(1);
             Assert.Equal(51, result);
         }
+
+        [Fact]
+        public void CheckToMergeLinkList()
+        {
+            Linklist ll1 = new Linklist();
+            Linklist ll2 = new Linklist();
+
+            ll1.Insert(1001);
+            ll1.Insert(1002);
+            ll1.Insert(1003);
+            ll1.Insert(1004);
+            ll1.Insert(1005);
+
+            ll2.Insert(2001);
+            ll2.Insert(2002);
+            ll2.Insert(2003);
+            ll2.Insert(2004);
+            ll2.Insert(2005);
+
+            Linklist ll3 = new Linklist();
+            ll3 = ll3.MergeList(ll1, ll2);
+            int input = ll3.Length;
+            int expected = 10;
+
+            Assert.Equal(expected, input);
+        }
     }
 }

@@ -22,7 +22,7 @@ Dequeue()
 
 ## Whiteboard Visual
 ![Console Output](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/QueueWStack.png)
-![WhiteBoard]
+![WhiteBoard](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/Enqueue.png)
 
 ## Change Log
 Vers 1.0 - Created the program with the features.

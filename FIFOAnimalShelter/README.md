@@ -3,25 +3,25 @@
 ### Author: Teddy Damian
 
 ## Problem Domain
-Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
-- enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
-- dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
-The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+- enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+- dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 
-Enqueue(value)
+Enqueue(animal)
 | Input | Arguments | Expected Output |
 | :----------- | :----------- |:----------- |
-| [10]->[15]->[20] | 5 | [5]->[10]->[15]->[20]|
-|  | 5  | [5] |
+| Dog -> Cat -> Dog | Dog1 | Dog1 -> Dog -> Cat -> Dog|
 
-Dequeue()
-| Input | Output | Internal State |
-| :----------- | :----------- |:----------- |
-| [5]->[10]->[15]->[20] | 20 | [5]->[10]->[15]|
-| [5]->[10]->[15] | 15 | [5]->[10]|
+
+Dequeue(pref)
+| Input |  Output |
+| :----------- | :----------- |
+|  Dog1 -> Dog -> Cat -> Dog |  Dog1 -> Dog -> Cat   |
+
 
 ## Whiteboard Visual
-![Console Output](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/QueueWStack.png)
+![Console Output](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/FIFO.png)
 ![WhiteBoard]
 
 ## Change Log

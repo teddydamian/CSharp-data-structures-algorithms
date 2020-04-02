@@ -1,5 +1,5 @@
 
-# Array Shift
+# Multi Bracket Validation
 ### Author: Teddy Damian
 
 ## Problem Domain

@@ -10,7 +10,7 @@ namespace MultiBracketTest
         [Fact]
         public void Test1()
         {
-    
+
         }
     }
 }

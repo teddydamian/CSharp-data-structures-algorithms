@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MultiBracketValidation.Classes
 {
-    public class BracketValidation
+    public class bracket
     {
         /// <summary>
         /// Method will put the closing bracket for every opening bracket.
@@ -11,7 +11,7 @@ namespace MultiBracketValidation.Classes
         /// </summary>
         /// <param name="input"></param>
         /// <returns>True/False</returns>
-        public static bool MultiBracketValidate(string input)
+        public bool Validate(string input)
         {
             Stack stax = new Stack();
 

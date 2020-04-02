@@ -1,7 +1,8 @@
 ﻿using System;
+
 namespace MultiBracketValidation.Classes
 {
-    public class bracket
+    public class Bracket
     {
         /// <summary>
         /// Method will put the closing bracket for every opening bracket.
@@ -49,5 +50,6 @@ namespace MultiBracketValidation.Classes
                 return false;
             }
         }
+
     }
 }

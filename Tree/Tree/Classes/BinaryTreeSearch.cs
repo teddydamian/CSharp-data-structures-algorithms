@@ -42,5 +42,6 @@ namespace Tree.Classes
             Traverse(root.Left);
             Traverse(root.Right);
         }
+
     }
 }

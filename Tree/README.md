@@ -10,12 +10,7 @@ Create a BinarySearchTree class
 - Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
 ## Tests
-- Can successfully instantiate an empty tree
-- Can successfully instantiate a tree with a single root node
-- Can successfully add a left child and right child to a single root node
-- Can successfully return a collection from a preorder traversal
-- Can successfully return a collection from an inorder traversal
-- Can successfully return a collection from a postorder traversal
+![Tests](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/TreeTest.png)
 
 ## API
 - inOrder

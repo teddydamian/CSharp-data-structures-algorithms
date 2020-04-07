@@ -13,8 +13,6 @@ namespace Tree.Classes
             Root = null;
         }
 
-      
-
         /// <summary>
         /// This method will return a list of int from PreOrder
         /// PairProgramming with Carrington
@@ -92,17 +90,5 @@ namespace Tree.Classes
             Helper(root, postOrderValues);
             return postOrderValues;
         }
-
-        //public string TreeToString(BinaryTree tree)
-        //{
-        //    string str = Convert.ToString(tree.Root.Value);
-        //    StringBuilder sb = new StringBuilder();
-
-        //    while(tree.Root.Value != null)
-        //    {
-        //        sb.Append($"{tree.Root.Value}, ");
-                
-        //    }
-        //}
     }
 }

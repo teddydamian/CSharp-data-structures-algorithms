@@ -14,8 +14,7 @@ namespace Tree.Classes
         {
             if (root == null)
             {
-                root = new Node();
-                root.Value = value;
+                root = new Node(value);
             }
             else if (value < root.Value)
             {

@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using Tree.Classes;
+using System.Collections.Generic;
 
 namespace TreeTest
 {
@@ -44,14 +45,55 @@ namespace TreeTest
             Assert.Equal(15, tree.Root.Right.Value);
         }
 
+        /// <summary>
+        /// Testing for PreOrder
+        /// </summary>
+        [Fact]
+        public void TestingPreOrder()
+        {
+            BinaryTree tree = new BinaryTree();
+            tree.Root = new Node(30);
+            tree.Root.Left = new Node(35);
+            tree.Root.Right = new Node(25);
+            tree.Root.Left.Right = new Node(20);
 
-        //[Fact]
-        //public void TestForPreOrder()
-        //{
-        //    BinaryTreeSearch tree = new BinaryTreeSearch();
-        //    tree.InsertNode(tree.Root, 10);
+            List<int> expected = new List<int> { 30, 35, 20, 25 };
 
+            Assert.Equal(expected, tree.PreOrder());
+        }
 
-        //}
+        /// <summary>
+        /// Testing for Post Order
+        /// </summary>
+        [Fact]
+        public void TestingPostOrder()
+        {
+            BinaryTree tree = new BinaryTree();
+            tree.Root = new Node(30);
+            tree.Root.Left = new Node(35);
+            tree.Root.Right = new Node(25);
+            tree.Root.Left.Right = new Node(20);
+
+            List<int> expected = new List<int> { 20, 35, 25, 30 };
+
+            Assert.Equal(expected, tree.PostOrder());
+        }
+
+        /// <summary>
+        /// Testing for Post Order
+        /// </summary>
+        [Fact]
+        public void TestingInOrder()
+        {
+            BinaryTree tree = new BinaryTree();
+            tree.Root = new Node(30);
+            tree.Root.Left = new Node(35);
+            tree.Root.Right = new Node(25);
+            tree.Root.Left.Right = new Node(20);
+
+            List<int> expected = new List<int> { 35, 20, 30, 25 };
+
+            Assert.Equal(expected, tree.InOrder());
+        }
     }
 }

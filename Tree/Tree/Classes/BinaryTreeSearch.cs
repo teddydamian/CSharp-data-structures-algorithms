@@ -10,7 +10,7 @@ namespace Tree.Classes
         /// This method insert a method depending on the value, using recursion
         /// PairProgramming with Carrington
         /// </summary>
-        public Node InsertNode(Node root, int value)
+        public Node Add(Node root, int value)
         {
             if (root == null)
             {
@@ -18,28 +18,51 @@ namespace Tree.Classes
             }
             else if (value < root.Value)
             {
-                root.Left = InsertNode(root.Left, value);
+                root.Left = Add(root.Left, value);
             }
             else
             {
-                root.Right = InsertNode(root.Right, value);
+                root.Right = Add(root.Right, value);
             }
             this.Root = root;
             return this.Root;
         }
 
         /// <summary>
-        /// This method traverse through the BinaryTrees
+        /// This method check if Binary contains a value
         /// </summary>
         /// <param name="root"></param>
-        public void Traverse(Node root)
+        public bool Contains(int value)
         {
-            if (root == null)
+            
+            bool flag = false;
+            void Helper(Node helperRoot, int checkValue)
             {
+                if (!flag)
+                {
+                    if (helperRoot == null)
+                    {
+                        return;
+                    }
+                    if (helperRoot.Value == checkValue)
+                    {
+                        flag = true;
+                        return;
+                    }
+                    if (checkValue < helperRoot.Value)
+                    {
+                        Helper(helperRoot.Left, checkValue);
+                    }
+                    else
+                    {
+                        Helper(helperRoot.Right, checkValue);
+                    }
+                }
                 return;
             }
-            Traverse(root.Left);
-            Traverse(root.Right);
+
+            Helper(Root, value);
+            return flag;
         }
 
     }

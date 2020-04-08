@@ -25,7 +25,7 @@ namespace TreeTest
         public void InstantiateANewTreeWithARootNode()
         {
             BinaryTreeSearch tree = new BinaryTreeSearch();
-            tree.InsertNode(tree.Root, 10);
+            tree.Add(tree.Root, 10);
          
             Assert.Equal(10, tree.Root.Value);
         }
@@ -37,9 +37,9 @@ namespace TreeTest
         public void CanAddLeftAndRightChild()
         {
             BinaryTreeSearch tree = new BinaryTreeSearch();
-            tree.InsertNode(tree.Root, 10);
-            tree.InsertNode(tree.Root, 15);
-            tree.InsertNode(tree.Root, 5);
+            tree.Add(tree.Root, 10);
+            tree.Add(tree.Root, 15);
+            tree.Add(tree.Root, 5);
 
             Assert.Equal(5, tree.Root.Left.Value);
             Assert.Equal(15, tree.Root.Right.Value);

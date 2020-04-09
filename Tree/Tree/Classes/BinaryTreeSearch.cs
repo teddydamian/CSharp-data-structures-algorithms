@@ -29,7 +29,7 @@ namespace Tree.Classes
         }
 
         /// <summary>
-        /// This method check if Binary contains a value
+        /// This method check if Binary contains a value using Recursion
         /// </summary>
         /// <param name="root"></param>
         public bool Contains(int value)

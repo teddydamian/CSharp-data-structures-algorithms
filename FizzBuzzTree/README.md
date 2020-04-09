@@ -11,6 +11,9 @@ Create a new tree with the same structure as the original, but the values modifi
 - If the value is not divisible by 3 or 5, simply turn the number into a String.
 - Return the new tree.
 
+## XUnit Testing
+![Test](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/FizzTest.png)
+
 ## Whiteboard Visual
 ![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/Fizzbuzz.png)
 

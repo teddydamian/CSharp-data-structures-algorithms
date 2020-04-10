@@ -5,6 +5,8 @@ You are working with a file structure with only at most 2 files or folder. Each 
 
 Comparing two file different file directories, create a method that takes in 2 directory structures and compares both and determines whether or not they have the same number of individual files.
 
+## Unit Test
+![test](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/tresstest.png)
 
 ## Whiteboard Visual
 ![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/treecompare.png)

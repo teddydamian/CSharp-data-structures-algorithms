@@ -7,7 +7,7 @@ Comparing two file different file directories, create a method that takes in 2 d
 
 
 ## Whiteboard Visual
-![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/ArrayShift/ArrayShift/ArrShft.png)
+![alt text](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/treecompare.png)
 
 ## Change Log
 Vers 1.0 - Created the program with the features.

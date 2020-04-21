@@ -5,7 +5,7 @@ Create a method that takes in an array and return the array sorted.
 
 ### Solution
 - Create a for loop that iterate the array
-- Set j = 0 to keep within the loop
+- Set j = 0 to stay within the loop
 - Set temp = array[i]
 - Set j to i-1 when i is greater than 0
 - Set before = array[j]

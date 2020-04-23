@@ -6,24 +6,20 @@ namespace MergeSortTest
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// This test takes in 4 different arrays, and sort them.
+        /// </summary>
         [Theory]
         [InlineData(new int[] { 8, 4, 23, 42, 16, 15 }, new int[] { 4, 8, 15, 16, 23, 42 })]
-        public void TestArray1(int[] input, int[] expected)
+        [InlineData(new int[] { 20, 18, 12, 8, 5, -2 }, new int[] { -2, 5, 8, 12, 18, 20 })]
+        [InlineData(new int[] { 5, 12, 7, 5, 5, 7 }, new int[] { 5, 5, 5, 7, 7, 12 })]
+        [InlineData(new int[] { 2, 3, 5, 7, 13, 11 }, new int[] { 2, 3, 5, 7, 11, 13 })]
+        public void TestForAllArrayTypes(int[] input, int[] expected)
         {
-            int[] before = input;
-            int[] result = Program.MergeSortArray(before);
+            int[] result = Program.MergeSortArray(input);
 
             Assert.Equal(expected, result);
         }
 
-        //[Fact]
-        //public void TestArray1()
-        //{
-        //    int[] before = new int[] { 8, 4, 23, 42, 16, 15 };
-        //    int[] expected = Program.MergeSortArray(before);
-        //    int[] result = new int[] { 4, 8, 15, 16, 23, 42 };
-
-        //    Assert.Equal(result, expected);
-        //}
     }
 }

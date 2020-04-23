@@ -6,7 +6,8 @@ namespace MergeSort
     {
         static void Main(string[] args)
         {
-
+            int[] array = { 8, 4, 23, 42, 16, 15 };
+            MergeSortArray(array);
         }
 
         /// <summary>
@@ -70,39 +71,37 @@ namespace MergeSort
             // loop through while counter is less than left and right array length
             while (i < left.Length || j < right.Length)
             {
-                if(i < left.Length && j < right.Length)
+                if (i < left.Length && j < right.Length)
                 {
                     // populate result array after comparing each value in left[i] and right[j]
-                    if(left[i] <= right[j])
+                    if (left[i] <= right[j])
                     {
                         result[k] = left[i];
                         i++;
-                       
+
                     }
                     else
                     {
                         result[k] = right[j];
                         j++;
-
                     }
                     k++;
                 }
 
-                if(i < left.Length)
+                else if (i < left.Length)
                 {
                     result[k] = left[i];
                     i++;
                     k++;
-
                 }
-                else if(j < right.Length)
+                else if (j < right.Length)
                 {
                     result[k] = right[j];
                     j++;
                     k++;
                 }
             }
-            return array;
+            return result;
         }
     }
 }

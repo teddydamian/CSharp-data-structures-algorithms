@@ -55,3 +55,4 @@ After all the recurrsion, all the index in the array will be compared to each of
 
 Then MergeSort will return the sorted array.
 
+![Visual](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/QuickSort.png)

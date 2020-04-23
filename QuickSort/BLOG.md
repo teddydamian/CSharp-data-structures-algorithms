@@ -37,7 +37,7 @@ ALGORITHM Swap(arr, i, low)
 ```
 
 ## How it works
-#### 1. MergeSort
+#### 1. QuickSort
 The method will take in an array, the first index position and the last index position. Then with an if statement, if the first index position is less than the last index position, it will call the method partition, that takes in the parameter.
 
 #### 2. Partition
@@ -48,11 +48,11 @@ Once the for loop is done, swap the pivot value with the number of how many swap
 
 #### 3. Position after Partition
 The method partition will return an index position of where the pivot value will be.
-Using Recursion, Call the MergeSort with the array again for the left subarray and right subarray.
+Using Recursion, Call the QuickSort with the array again for the left subarray and right subarray.
 
 #### 4. Result
 After all the recurrsion, all the index in the array will be compared to each of its pivot value of its array and will be separated again until it breaks out of the first if statement. (for example, the left subarray will compare each value to the pivot value(end index of left subarray), and put the pivot value in the middle of the array again.
 
-Then MergeSort will return the sorted array.
+Then QuickSort will return the sorted array.
 
 ![Visual](https://github.com/teddydamian/CSharp-data-structures-algorithms/blob/master/assets/QuickSort.png)

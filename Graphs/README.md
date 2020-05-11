@@ -19,7 +19,7 @@ Include the weight of the connection in the returned collection
 #### Size()
 Returns the total number of nodes in the graph
 
-Data Structure Time Complexity
+## Data Structure Time Complexity
 |Storage   | Add Vertex.     | Add Edge     | Remove Vertex| Remove Edge |Query|
 |----------|:----------------|:-------------|:-------------|:------------|:---:|
 | O(\|V\|+\|E\|)  | O(1)         |O(1)          | O(\|V\| + \|E\|) | O(\|E\|)      |O(\|V\|)|

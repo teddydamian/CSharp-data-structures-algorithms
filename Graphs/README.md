@@ -1,4 +1,5 @@
 # Graphs Implementation
+A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph. 
 
 ## Features
 #### AddNode()
@@ -23,3 +24,5 @@ Returns the total number of nodes in the graph
 |Storage   | Add Vertex.     | Add Edge     | Remove Vertex| Remove Edge |Query|
 |----------|:----------------|:-------------|:-------------|:------------|:---:|
 | O(\|V\|+\|E\|)  | O(1)         |O(1)          | O(\|V\| + \|E\|) | O(\|E\|)      |O(\|V\|)|
+
+Source geeksforgeeks.com

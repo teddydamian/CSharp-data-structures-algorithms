@@ -6,7 +6,7 @@ Given an array of integers and a new number. Output index location of the number
 
 | Input | Expected Output |
 | :----------- | :----------- |
-| [2,3,4,5] 3 |  | 1
+| [2,3,4,5] 3 |   1 |
 | [2,99,120,200] 12  | -1 |
 
 ## Console Visual
